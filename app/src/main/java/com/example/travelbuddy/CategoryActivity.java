@@ -46,12 +46,21 @@ public class CategoryActivity extends AppCompatActivity {
     }
 
     private String mapCategory(String cat) {
-        switch (cat) {
-            case "toppicks": return "entertainment";
-            case "restaurants": return "catering.restaurant";
-            case "natural": return "natural";
-            case "shops": return "commercial.shopping";
-            default: return "entertainment";
+        if (cat == null) return "entertainment";
+        switch (cat.toLowerCase()) {
+            case "toppicks":
+            case "tourist":
+                return "tourism.attraction";
+            case "restaurants":
+                return "catering.restaurant";
+            case "natural":
+                return "entertainment.park";
+            case "shops":
+            case "shopping":
+                // Use supported shopping category
+                return "commercial.shopping_mall";
+            default:
+                return "tourism.attraction";
         }
     }
 

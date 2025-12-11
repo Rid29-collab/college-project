@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomeActivity">
+
+    <!-- PROFILE IMAGE BUTTON (TOP RIGHT) -->
+    <ImageButton
+        android:id="@+id/btnProfile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/circle_bg"
+        android:padding="10dp"
+        android:src="@drawable/user"
+        android:scaleType="centerInside"
+        android:contentDescription="Profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- GRID LAYOUT FOR 4 CATEGORIES -->
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/categoryGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:alignmentMode="alignMargins"
+        app:columnCount="2"
+        app:rowCount="2"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- TOP PICKS -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/btnTopPicks"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/circle_bg"
+                android:padding="8dp"
+                android:src="@drawable/toppicks"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Top Picks"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <!-- SHOPPING -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/btnShopping"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/circle_bg"
+                android:padding="8dp"
+                android:src="@drawable/shopping"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Shopping"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <!-- NATURE -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/btnNature"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/circle_bg"
+                android:padding="8dp"
+                android:src="@drawable/nature"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Nature"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <!-- FOOD -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/btnFood"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/circle_bg"
+                android:padding="8dp"
+                android:src="@drawable/food"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Food"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <!-- GET LOCATION BUTTON (BOTTOM CENTER) -->
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Location"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

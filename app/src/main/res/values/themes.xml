@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.TravelBuddy" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/green_400</item>
+        <item name="colorPrimaryDark">@color/orange_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/cyan_300</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/orange_700</item>
+
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/green_400</item>
+
+    </style>
+
+</resources>

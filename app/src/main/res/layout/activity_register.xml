@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#DAD7CD">
+
+    <TextView
+        android:text="Create Account"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#344E41"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:hint="Full Name"
+        android:background="@drawable/rounded_input"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:textColorHint="#555"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:hint="Email"
+        android:background="@drawable/rounded_input"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:textColorHint="#555"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:hint="Password"
+        android:background="@drawable/rounded_input"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:textColorHint="#555"
+        android:inputType="textPassword"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/confirmPasswordEt"
+        android:hint="Confirm Password"
+        android:background="@drawable/rounded_input"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:textColorHint="#555"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:text="Register"
+        android:textColor="#fff"
+        android:background="#A3B18A"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

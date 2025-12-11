@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="#DAD7CD">
+
+    <!-- Search Bar Row -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp"
+            android:hint="Search city..."
+            android:textColor="#000"
+            android:textColorHint="#555" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:text="Go"
+            android:textColor="#FFFFFF"
+            android:background="#344E41" />
+    </LinearLayout>
+
+    <!-- Map -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapSelect"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF" />
+
+    <!-- Select Button -->
+    <Button
+        android:id="@+id/btnSelectLocation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="Select This Location"
+        android:textColor="#FFFFFF"
+        android:background="#A3B18A"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="8dp">-->
+
+<!--    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">-->
+<!--        <EditText android:id="@+id/searchBox" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="@string/search_hint"/>-->
+<!--        <Button android:id="@+id/btnSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Go"/>-->
+<!--    </LinearLayout>-->
+
+<!--    <org.osmdroid.views.MapView-->
+<!--        android:id="@+id/mapSelect"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_marginTop="8dp" />-->
+
+<!--    <Button android:id="@+id/btnSelectLocation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#437057"-->
+<!--        android:text="Select this location"/>-->
+<!--</LinearLayout>-->

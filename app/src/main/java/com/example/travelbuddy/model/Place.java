@@ -4,21 +4,28 @@ public class Place {
 
     private String name;
     private String formatted;
-    private String categories;
+    private java.util.List<String> categories;
     private double lat;
     private double lon;
 
     // Setters
     public void setName(String n) { name = n; }
     public void setFormatted(String f) { formatted = f; }
-    public void setCategories(String c) { categories = c; }
+    public void setCategories(java.util.List<String> c) { categories = c; }
     public void setLat(double l) { lat = l; }
     public void setLon(double l) { lon = l; }
 
     // Getters
     public String getName() { return name; }
     public String getFormatted() { return formatted; }
-    public String getCategories() { return categories; }
+
+    // Join categories into a display-friendly string.
+    public String getCategories() {
+        if (categories == null || categories.isEmpty()) return null;
+        if (categories.size() == 1) return categories.get(0);
+        return String.join(", ", categories);
+    }
+
     public double getLat() { return lat; }
     public double getLon() { return lon; }
 }

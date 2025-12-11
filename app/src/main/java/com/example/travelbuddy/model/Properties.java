@@ -1,17 +1,17 @@
 package com.example.travelbuddy.model;
 
-
 public class Properties {
 
     private String name;
     private String formatted;
-    private String categories;
+    // Geoapify sends an array of category strings.
+    private java.util.List<String> categories;
     private double lat;
     private double lon;
 
     public String getName() { return name; }
     public String getFormatted() { return formatted; }
-    public String getCategories() { return categories; }
+    public java.util.List<String> getCategories() { return categories; }
     public double getLat() { return lat; }
     public double getLon() { return lon; }
 }

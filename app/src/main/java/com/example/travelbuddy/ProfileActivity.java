@@ -19,6 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -94,7 +95,8 @@ public class ProfileActivity extends AppCompatActivity {
                             Place place = new Place();
 
                             place.setName(doc.getString("name") != null ? doc.getString("name") : "Unknown Place");
-                            place.setCategories(doc.getString("category") != null ? doc.getString("category") : "Unknown Category");
+                            String cat = doc.getString("category");
+                            place.setCategories(Collections.singletonList(cat != null ? cat : "Unknown Category"));
 
                             // Use setLat / setLon instead of setDetails
                             place.setLat(doc.getDouble("lat") != null ? doc.getDouble("lat") : 0.0);

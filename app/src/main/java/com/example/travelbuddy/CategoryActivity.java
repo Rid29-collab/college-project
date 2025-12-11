@@ -54,7 +54,8 @@ public class CategoryActivity extends AppCompatActivity {
             case "restaurants":
                 return "catering.restaurant";
             case "natural":
-                return "entertainment.park";
+                // Parks category not supported; use a broad tourism bucket to avoid 400.
+                return "building.tourism";
             case "shops":
             case "shopping":
                 // Use supported shopping category
